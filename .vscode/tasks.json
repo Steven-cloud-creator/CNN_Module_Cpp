@@ -1,0 +1,55 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "D:\\SoftWare\\msys2\\ucrt64\\bin\\g++.exe",
+            "args": [
+                "-g",                  // 生成调试信息
+                "-std=c++11",          // 指定C++标准
+                "cpp/Test/main.cpp",            // 主文件
+                "cpp/Modules/src/Conv2d.cpp",          // 卷积层实现
+                "cpp/Modules/src/BatchNorm2d.cpp",     // 批量归一化实现
+                "cpp/Modules/src/ReLU6.cpp",     // 批量归一化实现
+                "cpp/Modules/src/ConvBNReLU.cpp",
+                "-o",                  // 输出可执行文件
+                "cpp/app"                  // 输出文件名
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
+
+// {
+//     "tasks": [
+//         {
+//             "type": "cppbuild",
+//             "label": "C/C++: g++.exe 生成活动文件",
+//             "command": "D:\\SoftWare\\msys2\\ucrt64\\bin\\g++.exe",
+//             "args": [
+//                 "-fdiagnostics-color=always",
+//                 "-g",
+//                 "${file}",
+//                 "-o",
+//                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
+//             ],
+//             "options": {
+//                 "cwd": "${fileDirname}"
+//             },
+//             "problemMatcher": [
+//                 "$gcc"
+//             ],
+//             "group": {
+//                 "kind": "build",
+//                 "isDefault": true
+//             },
+//             "detail": "调试器生成的任务。"
+//         }
+//     ],
+//     "version": "2.0.0"
+// }

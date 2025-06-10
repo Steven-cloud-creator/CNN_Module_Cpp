@@ -1,4 +1,4 @@
-#include "ReLU6.h"
+#include "../include/ReLU6.h"
 
 ReLU6::ReLU6(D32 threshold) : threshold(threshold)
 {

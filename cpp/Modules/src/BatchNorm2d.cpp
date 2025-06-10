@@ -1,4 +1,4 @@
-#include "BatchNorm2d.h"
+#include "../include/BatchNorm2d.h"
 
 BatchNorm2d::BatchNorm2d(int num_features, 
                 const D32* mean,
