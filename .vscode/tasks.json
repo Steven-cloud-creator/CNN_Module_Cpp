@@ -8,13 +8,10 @@
             "args": [
                 "-g",                  // 生成调试信息
                 "-std=c++11",          // 指定C++标准
-                "cpp/Test/main.cpp",            // 主文件
-                "cpp/Modules/src/Conv2d.cpp",          // 卷积层实现
-                "cpp/Modules/src/BatchNorm2d.cpp",     // 批量归一化实现
-                "cpp/Modules/src/ReLU6.cpp",     // 批量归一化实现
-                "cpp/Modules/src/ConvBNReLU.cpp",
+                "cpp_HLS/Test/main.cpp",            // 主文件
+                "cpp_HLS/Modules/src/BlockConv2d.cpp",          // 卷积层实现
                 "-o",                  // 输出可执行文件
-                "cpp/app"                  // 输出文件名
+                "cpp_HLS/app"                  // 输出文件名
             ],
             "group": {
                 "kind": "build",

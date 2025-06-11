@@ -5,7 +5,7 @@
             "name": "Debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/cpp/app",  // 可执行文件路径
+            "program": "${workspaceFolder}/cpp_HLS/app",  // 可执行文件路径
             "args": [],                          // 命令行参数
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
